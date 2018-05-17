@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700,900');
+*{
+	font-family: 'Titillium Web', sans-serif;
+}
+.no-result{
+	background: #faa61a;
+    color: #fff;
+}
+
+body{
+	background: url(assets/img/banner.png);
+}
+header{
+	margin-top: 20px;
+	a:hover{color:#fff;}
+	.nav-link{cursor: pointer;img{border-radius: 100%}}
+}
+.banner{
+	height: 600px;
+	h2,label{
+		color:#fff;	
+	}
+}
+
+main{
+	background: #fff;
+	min-height: 500px;
+}
+
+footer{
+	background: #252525;
+	ul{
+		margin:0;
+		padding: 0;
+	}
+	p,h5,a{
+		color: #aebdbd
+	}
+	.copyright{
+		color: #fff;
+	}
+	a{color: #fff}
+}
+#regionPopup{
+	a{
+		line-height: 15px;
+		cursor: pointer;
+		img{margin-right: 3px;}
+	}
+	a:hover{
+		color:#faa61a;
+	}
+	.region{
+		border-bottom: 1px solid #ddd;
+		&:last-child{
+			border-bottom:0;
+		}
+	}
+}
+.search-filter{
+	background: #eee;
+	padding: 15px;
+	h5,.fa-star{color: #faa61a;cursor: pointer;}
+	i{
+		margin-right: 8px;
+	}
+	ul{
+		list-style: none;
+		padding-left: 28px;
+		li{
+			cursor: pointer;
+		}
+	}
+	#map{
+		height: 200px;
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}
+.review-block{
+	img{
+		width: 100px;
+		display: inline-block;
+		border-radius: 100%;
+		height: 100px;
+		object-fit: cover;
+	}
+	ul{
+		margin:0;padding: 0;
+	}
+	.detail{
+		background: #eee;
+	    padding: 51px 20px 18px;
+	    margin-top: -41px;
+	}
+	li{color: #faa61a}
+}
+/*Search PAGE*/
+.business-block{
+	.business-image-block{
+		height: 300px;
+		position: relative;
+		img{
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+		.static{
+			position: absolute;
+		    bottom: 0;
+		    height: 100px;
+		    background: rgba(0, 0, 0, 0.560);
+		    width: calc(100% - 30px);
+		    text-align: CENTER;
+		    a,p{
+		    	color: #fff;
+		    }
+		}
+		a.book{
+			font-weight: bold;color: #faa61a;
+		}
+	}
+	.business-block{
+		border:1px solid #eee;
+		border-top: 0;
+		ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
+/*HOME PAGE*/
+.home-category{
+	.cat-inner{
+    	background-size: cover;
+    	padding-top: 15px;
+    	padding-bottom: 15px;
+    	.inner{
+    		background: rgba(0, 0, 0, 0.65);
+    		height: 250px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			border: 2px solid #fff;
+    	}
+    	h2,button{
+    		color: #fff;
+    	}
+	}
+}
+home-page-section-app{
+	img{
+		max-width: 100%;
+	}
+	a.link{
+		display: inline-block;
+		margin-bottom: 1rem;
+		img{
+			max-width: 140px;
+		}
+	}
+	h2{
+		color: #333;
+	}
+	h3{
+		color: #faa61a;
+	}
+	h4{
+		background-color: #333;
+		color: #fff;
+	}
+}
+/*Profile page*/
+user-profile-page{
+	.profile-image{
+		height: 160px;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		img{
+			border-radius: 100%;
+		}
+	}
+	.form-control[readonly]{
+		background: transparent;
+	}
+	.input-group-append{
+		cursor: pointer;
+	}
+}
+/*PROFILE PAGE*/
+profile-page{
+	#map{
+		height: 250px;
+		width: 100%;
+	}
+	h1{    text-transform: capitalize;}
+	.b-logo{
+		width: 100px;height: 100px;object-fit: cover;border-radius: 100%;
+	}
+	.b-banner{
+		width: 100%;height: 300px;object-fit: cover;	
+	}
+	.b-overview{
+		text-align: justify;
+		overflow: hidden;
+	}
+	a{cursor: pointer;color: #faa61a}
+	.review-row{
+		strong{text-transform: capitalize;}
+		p{overflow: hidden;margin: 0}
+		span.date{clear: both;display: block;}
+		img{
+			width: 100px;height: 100px;object-fit: cover;border-radius: 100%;
+		}
+		&:last-child hr{display: none;}
+	}
+	.profile-block{
+		padding:15px;
+		background: #eee;
+		i{margin-right: 5px}
+		ul{margin:0;padding: 0;list-style: none;}
+		&.team{
+			img{
+				border-radius: 100%;
+				height: 100px;
+				width: 100px;
+				display: inline-block;
+				object-fit: cover;
+			}
+		}
+	}
+	.mbsc-mobiscroll.mbsc-rating.mbsc-rating-primary .mbsc-progress-track{
+		color: #faa61a;
+		opacity: 1 !important;
+	}
+	.mbsc-mobiscroll.mbsc-progress{padding: 0 !important}
+	#bookingModel{
+		.b-service-row{
+			img{
+				width: 80px;
+				height: 80px;
+				border-radius: 100%;
+			}
+		}
+		.slots-block{
+			button{
+				min-width: 75px
+			}
+		}
+	}
+	.modal-lg{
+		@media (min-width: 992px){
+			max-width: 1014px;
+		}
+	}
+}
+business-work{
+	width: 100%;
+	img{
+		width: 100%;
+		object-fit: cover;
+		height: 300px;
+	}
+}
